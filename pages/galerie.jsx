@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import React from "react";
-
+import Image from 'next/image';
 import Header from "../components/header";
 import Search from "../components/search";
 
