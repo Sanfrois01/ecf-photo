@@ -14,7 +14,7 @@ export default function Form() {
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">Votre adresse eMail</label>
             <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" />
-            <div id="emailHelp" className="form-text">L'adresse e-mail ne sera en aucun cas partagée</div>
+            <div id="emailHelp" className="form-text">L&apos;adresse e-mail ne sera en aucun cas partagée</div>
           </div>
           <div className=" mb-3">
             <label htmlFor="exampleInputText" className="form-label">Votre Message</label>

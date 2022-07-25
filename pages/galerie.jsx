@@ -20,7 +20,7 @@ const Galerie = () => {
 
   }, []);
 
-  const [imagesBapteme, setImageBapteme] = useState ([
+  const [imagesBapteme, setImageBapteme] = useState([
 
     'bapteme1.jpg',
     'bapteme2.jpg',
@@ -37,12 +37,19 @@ const Galerie = () => {
     return imagesBapteme.map((imagesBapteme) => {
       return (
         <>
-        <div className="d-flex justify-content-center my-3"></div>
-        <img className="Image-thumbnail rounded mx-3 w-50" key={imagesBapteme.id}  src={imagesBapteme}></img>
+          <div className="d-flex justify-content-center my-3"></div>
+          <Image
+            alt="Charles Cantin - Photographe"
+            width={750}
+            height={750}
+            className="Image-thumbnail rounded mx-3 w-50"
+            key={imagesBapteme.id}
+            src={imagesBapteme}>
+          </Image>
         </>
       );
-  });
-}
+    });
+  }
 
 
 
@@ -62,11 +69,11 @@ const Galerie = () => {
             <li class="breadcrumb-item"><a href="#">Mariage</a></li>
           </ol>
         </nav>
-      </div>      
+      </div>
     </>
 
 
-    
+
   )
 }
 export default Galerie;
